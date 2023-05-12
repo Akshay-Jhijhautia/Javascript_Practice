@@ -117,25 +117,27 @@ function readingDataFromFilename(path){
 }
 
 function deletingFiles(data){
-    return new Promise((resolve,reject) => {
-        let files = data.split(" ");
-        let promises = [];
-        for(let index = 0; index < files.length; index++){
-            let promise = new Promise((resolve,reject) => {
+    return new Promise((resolve,reject)=>{
+        let files = data.split(' ');
+        let resFiles = [];
+        for(let index = 0; index< files.length; index++){
+            let file = new Promise((resolve,reject) => {
                 fs.unlink(files[index], (err) => {
                     if(err){
                         reject(err);
                     }
                     resolve(files[index]);
+                })
             })
+            resFiles.push(file);
+        }
+        Promise.all(resFiles)
+        .then(() => {
+            resolve("Deleted all the files");
         })
-        promises.push(promise);
-    }
-    Promise.all(promises).then(() => {
-        resolve("Deleted all files");
-    }).catch((err) => {
-        reject(err);
-    })
+        .catch((error)=> {
+            reject(error);
+        })
     })
 }
 module.exports = {fileManipulation,upperCase,writeUppercaseInFilename,readUpperCaseFile,splitData,writeSplitToFilename,readSplitData,sortData,writeSortToFilename,readingDataFromFilename,deletingFiles};
