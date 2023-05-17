@@ -1,0 +1,63 @@
+#header{
+    background-color: grey;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+#footer{
+    background-color: grey;
+    height: 10vh;
+    margin-top: 10px;
+}
+
+#parent{
+    display: flex;
+    height: 78vh;
+    overflow: hidden;
+    width: auto;
+}
+
+#red-orange{
+    width : 75%;
+}
+
+#child-red{
+    background-color: red;
+    height: 50%;
+}
+
+#child-orange{
+    background-color: orange;
+    height: 50%;
+}
+
+#child-yellow{
+    background-color: yellow;
+    height: 150%;
+    width: 30%;
+}
+
+@media screen and (max-width : 768px){
+    #header,#footer{
+        width: auto;
+    }
+
+    #parent{
+        width:auto
+    }
+    #red-orange, #child-yellow{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #parent{
+        display: block;
+        width: auto;
+        height: 75vh;
+    }
+    #red-orange,#child-yellow{
+        width: auto;
+        height: 66%;
+    }
+}
