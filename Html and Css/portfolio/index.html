@@ -4,93 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+      integrity="YOUR-INTEGRITY-CODE"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <main id="main">
-      <div id="first">
-        <section class="attributes">
-          <img id="photo" src="./photos/photo1.png" alt="photo" />
-          <h3 id="billy">Billy Pearson</h3>
-          <p id="full">Full-Stack developer</p>
-          <p id="mail">billy@example.com</p>
-          <p id="phone">(+603)546624342</p>
-          <p id="text">
-            Self-motivated developer, who is willing to learn and create
-            outstanding UI applications.
-          </p>
+      <div class="column1">
+        <section class="introduction box-shadow">
+          <img class="photo" src="./photos/photo1.png" alt="photo" />
+
+          <div class="box">
+            <h3 class="billy">Billy Pearson</h3>
+            <p class="full">Full-Stack developer</p>
+
+            <div class="mail_font mails">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="mail">billy@example.com</p>
+            </div>
+
+            <div class="mail_font phones">
+              <i class="fa-solid fa-phone"></i>
+              <p class="phone">(+603)546624342</p>
+            </div>
+
+            <p class="description">
+              Self-motivated developer, who is willing to learn and create
+              outstanding UI applications.
+            </p>
+          </div>
         </section>
 
-        <div class="attributes">
+        <div class="box-shadow">
           <h1 class="h1">Experiences</h1>
 
-          <section class="adidas">
+          <section class="experiances">
             <img src="./photos/adidas.jpg" alt="adidas" />
             <div class="content">
-              <p>Feb 2017 - Current</p>
-              <p class="full">Frontend developer</p>
-              <p>
-                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                Quisque feugiat malesuada molestie
-              </p>
+              <div>
+                <p class="time">Feb 2017 - Current</p>
+              </div>
+              <div>
+                <p class="role">Frontend developer</p>
+              </div>
+              <div>
+                <p class="desc">
+                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                  Quisque feugiat malesuada molestie.
+                </p>
+              </div>
             </div>
           </section>
 
-          <section class="adidas">
+          <section class="experiances">
             <img src="./photos/adidas.jpg" alt="Hm" />
             <div class="content">
-              <p>Aug 2016 - Feb 2018</p>
-              <p class="full">Full stack Developer</p>
-              <p>
-                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                Quisque feugiat malesuada molestie
-              </p>
+              <div>
+                <p class="time">Feb 2017 - Current</p>
+              </div>
+              <div>
+                <p class="role">Frontend developer</p>
+              </div>
+              <div>
+                <p class="desc">
+                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                  Quisque feugiat malesuada molestie.
+                </p>
+              </div>
             </div>
           </section>
 
-          <section class="adidas">
+          <section class="experiances">
             <img src="./photos/adidas.jpg" alt="nivea" />
             <div class="content">
-              <p>June 2015 - Aug</p>
-              <p class="full">Backend Developer</p>
-              <p>
-                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
-                Quisque feugiat malesuada molestie
-              </p>
+              <div>
+                <p class="time">Feb 2017 - Current</p>
+              </div>
+              <div>
+                <p class="role">Frontend developer</p>
+              </div>
+              <div>
+                <p class="desc">
+                  Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                  Quisque feugiat malesuada molestie.
+                </p>
+              </div>
             </div>
           </section>
         </div>
 
-        <section class="attributes">
-          <h1 class="h1">Hobbies</h1>
-          <div class="gaming">
+        <section class="box-shadow">
+          <h1 class="hobbies_head">Hobbies</h1>
+          <div class="hobbies">
             <img src="./photos/cooking.jpg" alt="gaming" />
-            <h2>Gaming</h2>
-            <p>Quisque feugiat malesuada molestie</p>
+            <h2 class="hobbies_name">Gaming</h2>
+            <p class="hobbies_desc">Quisque feugiat malesuada molestie</p>
           </div>
 
-          <div class="gaming">
+          <div class="hobbies">
             <img src="./photos/cooking.jpg" alt="gaming" />
             <h2>Cooking</h2>
-            <p>Quisque feugiat malesuada molestie</p>
+            <p class="hobbies_desc">Quisque feugiat malesuada molestie</p>
           </div>
 
-          <div class="gaming">
+          <div class="hobbies">
             <img src="./photos/cooking.jpg" alt="gaming" />
             <h2>Cycling</h2>
-            <p>Quisque feugiat malesuada molestie</p>
+            <p class="hobbies_desc">Quisque feugiat malesuada molestie</p>
           </div>
         </section>
       </div>
 
-      <div id="second">
-        <div id="part1">
+      <div class="column2">
+        <div class="part1">
           <section>
-            <div id="front" class="attributes">
-              <h1 class="h1">FRONT END</h1>
+            <div class="front-end box-shadow">
+              <h1 class="container-front">FRONT END</h1>
               <div class="react">
-                <div id="names">
+                <div class="names">
                   <p>React</p>
                   <p>Javascript</p>
                   <p>CSS</p>
@@ -101,22 +137,22 @@
 
                 <div>
                   <div class="progress_bar">
-                    <div id="react_blue"></div>
+                    <div class="react_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="javascript_blue"></div>
+                    <div class="javascript_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="css_blue"></div>
+                    <div class="css_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="vue_blue"></div>
+                    <div class="vue_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="redux_blue"></div>
+                    <div class="redux_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="native_blue"></div>
+                    <div class="native_blue"></div>
                   </div>
                 </div>
               </div>
@@ -124,19 +160,19 @@
           </section>
 
           <section>
-            <div id="design" class="attributes">
-              <h1 class="h1">DESIGN</h1>
-              <div id="figma">
-                <div id="designNames">
+            <div class="design box-shadow">
+              <h1 class="design-front">DESIGN</h1>
+              <div class="figma">
+                <div class="designNames">
                   <p>Figma</p>
                   <p>Photoshop</p>
                 </div>
                 <div>
                   <div class="progress_bar">
-                    <div id="figma_blue"></div>
+                    <div class="figma_blue"></div>
                   </div>
                   <div class="progress_bar">
-                    <div id="photoshop_blue"></div>
+                    <div class="photoshop_blue"></div>
                   </div>
                 </div>
               </div>
@@ -144,95 +180,109 @@
           </section>
         </div>
 
-        <section>
-          <div class="projects attributes">
-            <div class="problog">
+        <section class="part2">
+          <div class="projects box-shadow">
+            <div>
               <p>Projects (3)</p>
             </div>
           </div>
-          <div class="recipe_blogs attributes">
-            <div id="recipe-image">
+          <div class="recipe_blogs box-shadow">
+            <div class="recipe-image">
               <img src="./photos/gallery-1.jpeg" alt="recipe" />
             </div>
-            <div class="recipe-content">
+            <div class="recipe-content box-shadow">
               <span>#HTML #CSS #responsive</span>
               <h1>Recipe Blog</h1>
-              <p>
-                In this project, I work with HTML and CSS to create a responsive
-                page. The design is from dev challenge.io. Donec aliquam est
-                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
-                malesuada molestie.
-              </p>
-              <div class="demo">
-                <span>Demo</span>
+              <div class="para">
+                <p>
+                  In this project, I work with HTML and CSS to create a
+                  responsive page. The design is from dev challenge.io. Donec
+                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+                  feugiat malesuada molestie.
+                </p>
               </div>
-              <div class="code">
-                <span>Code</span>
+              <div class="button">
+                <div class="demo">
+                  <p>Demo</p>
+                </div>
+                <div class="code">
+                  <p>Code</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="recipe_blogs attributes">
-            <div id="recipe-image">
+          <div class="recipe_blogs box-shadow">
+            <div class="recipe-image">
               <img src="./photos/gallery-1.jpeg" alt="recipe" />
             </div>
             <div class="recipe-content">
               <span>#HTML #CSS #responsive</span>
               <h1>My Gallery</h1>
-              <p>
-                In this project, I work with HTML and CSS to create a responsive
-                page. The design is from dev challenge.io. Donec aliquam est
-                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
-                malesuada molestie.
-              </p>
-              <div class="demo">
-                <span>Demo</span>
+              <div class="para">
+                <p>
+                  In this project, I work with HTML and CSS to create a
+                  responsive page. The design is from dev challenge.io. Donec
+                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+                  feugiat malesuada molestie.
+                </p>
               </div>
-              <div class="code">
-                <span>Code</span>
+              <div class="button">
+                <div class="demo">
+                  <p>Demo</p>
+                </div>
+                <div class="code">
+                  <p>Code</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="recipe_blogs attributes">
-            <div id="recipe-image">
+          <div class="recipe_blogs box-shadow">
+            <div class="recipe-image box-shadow">
               <img src="./photos/gallery-1.jpeg" alt="recipe" />
             </div>
             <div class="recipe-content">
               <span>#HTML #CSS #responsive</span>
               <h1>Checkout</h1>
-              <p>
-                In this project, I work with HTML and CSS to create a responsive
-                page. The design is from dev challenge.io. Donec aliquam est
-                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
-                malesuada molestie.
-              </p>
-              <div class="demo">
-                <span>Demo</span>
+              <div class="para">
+                <p>
+                  In this project, I work with HTML and CSS to create a
+                  responsive page. The design is from dev challenge.io. Donec
+                  aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+                  feugiat malesuada molestie.
+                </p>
               </div>
-              <div class="code">
-                <span>Code</span>
+              <div class="button">
+                <div class="demo">
+                  <p>Demo</p>
+                </div>
+                <div class="code">
+                  <p>Code</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="projects attributes">
+          <div class="projects box-shadow">
             <div class="problog">
               <p>Blogs (1)</p>
             </div>
           </div>
-          <div class="css attributes">
-            <div id="organizeCss">
-              <span>How to organise your CSS</span>
-              <p>
-                In this article I tell the story about Proin eu justo sit amet
-                lacus bibendum tincidunt. Vivamus non volutpat nisl, a lactus
-                mi.
-              </p>
-              <p>
-                Donec aliquam est dui, vel vestibulum diam sollocitudin id.
-                Quisque feugiat malesuada molestie;
-              </p>
-              <p id="dev">dev.to</p>
+          <div class="css box-shadow">
+            <div class="organizeCss">
+              <div class="organizeText">
+                <p class="css-text">How to organise your CSS</p>
+                <p class="css-para">
+                  In this article I tell the story about Proin eu justo sit amet
+                  lacus bibendum tincidunt. Vivamus non volutpat nisl, a lactus
+                  mi.
+                </p>
+                <p class="css-para">
+                  Donec aliquam est dui, vel vestibulum diam sollocitudin id.
+                  Quisque feugiat malesuada molestie;
+                </p>
+                <p class="dev">dev.to</p>
+              </div>
             </div>
-            <div id="css-image">
+            <div class="css-image">
               <img src="./photos/gallery-1.jpeg" alt="recipe" />
             </div>
           </div>
