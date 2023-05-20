@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
 .introduction {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .box {
@@ -119,7 +121,7 @@ body {
 .experiances {
   display: flex;
   flex-direction: row;
-
+  padding: 5px;
   column-gap: 5%;
 }
 
@@ -127,6 +129,7 @@ body {
   width: 15%;
   object-fit: contain;
   object-position: center;
+  padding: 5px;
 }
 
 .content {
@@ -237,6 +240,7 @@ body {
   row-gap: 10px;
   height: 30vh;
   width: 105%;
+  padding: 5px;
 }
 
 .react {
@@ -343,6 +347,7 @@ body {
   flex-direction: column;
   row-gap: 10px;
   width: 105%;
+  padding: 5px;
 }
 .figma {
   display: flex;
@@ -383,6 +388,7 @@ body {
   display: flex;
   flex-direction: row;
   column-gap: 25px;
+  padding: 5px;
 }
 
 .recipe-content {
@@ -396,6 +402,7 @@ body {
   border-radius: 10px;
   width: 322px;
   height: 200px;
+  padding: 5px;
 }
 
 .recipe-content span {
@@ -471,6 +478,7 @@ body {
   display: flex;
   flex-direction: column;
   column-gap: 5px;
+  padding: 5px;
 }
 
 .organizeText {
