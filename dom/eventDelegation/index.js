@@ -30,8 +30,8 @@
 document.querySelector("#sports").addEventListener("click", function (event) {
   // method 1
 
-  //   console.log(event.target.getAttribute("id") + ` is clicked`);
-  //   event.target.style.backgroundColor = "lightgrey";
+  // console.log(event.target.getAttribute("id") + ` is clicked`);
+  // event.target.style.backgroundColor = "lightgrey";
 
   // method 2
 
