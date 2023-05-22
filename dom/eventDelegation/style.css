@@ -1,0 +1,25 @@
+#sports {
+  border: 1px solid black;
+  list-style-type: none;
+  align-content: center;
+}
+
+#football {
+  border: 1px solid black;
+}
+
+#basketball {
+  border: 1px solid black;
+}
+
+#boxing {
+  border: 1px solid black;
+}
+
+#tennis {
+  border: 1px solid black;
+}
+
+#golf {
+  border: 1px solid black;
+}
