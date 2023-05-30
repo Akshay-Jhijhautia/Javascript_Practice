@@ -1,8 +1,9 @@
 const createToDo = document.querySelector("#newTodo");
-let allTodo = [];
-
-let count = 0;
 const noOfItems = document.querySelector(".footer");
+
+let allTodo = [];
+let count = 0;
+
 createToDo.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     let incomingTodo = createToDo.value;

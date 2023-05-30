@@ -1,11 +1,3 @@
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
 * {
   padding: 0;
   margin: 0;
@@ -51,17 +43,26 @@
 .data {
   display: flex;
   flex-direction: row;
-}
-.check {
-  font-size: 1.5rem;
+  justify-content: space-between;
 }
 
-.crossButton {
-  background-image: url(./images/icon-cross.svg);
-  height: 30%;
-  width: 4%;
+.data img {
+  height: 70%;
+  margin-top: 1%;
+}
+.check {
+  display: flex;
+  font-size: 1.2rem;
 }
 
 .footer {
   color: black;
+}
+
+.check:hover {
+  opacity: 0.5;
+}
+
+.line {
+  text-decoration: line-through;
 }
