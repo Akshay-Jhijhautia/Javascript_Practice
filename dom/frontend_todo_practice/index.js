@@ -3,6 +3,7 @@ const noOfItems = document.querySelector(".footer");
 
 let allTodo = [];
 let count = 0;
+let elementId = 0;
 
 createToDo.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
@@ -11,11 +12,12 @@ createToDo.addEventListener("keypress", function (event) {
     let input = document.createElement("input");
     input.setAttribute("class", "newlist");
     input.setAttribute("type", "checkbox");
-    input.setAttribute("id", "newData");
+    elementId++;
+    input.setAttribute("id", elementId);
 
     let label = document.createElement("label");
     label.setAttribute("class", "check");
-    label.setAttribute("for", "newData");
+    label.setAttribute("for", elementId);
     label.innerText = incomingTodo;
 
     let deleteImage = document.createElement("img");
@@ -43,65 +45,58 @@ createToDo.addEventListener("keypress", function (event) {
   }
 });
 
-const allData = document.querySelector(".all");
-allData.addEventListener("click", function () {
-  let all = document.querySelector(".todoDetails");
-  all.innerHTML = "";
-  allTodo.forEach((item) => {
-    all.appendChild(item);
-  });
-});
+const allData = document.querySelector(".all_buttons");
+allData.addEventListener("click", function (event) {
+  let className = event.target.className;
 
-let completedData = document.querySelector(".completed");
-completedData.addEventListener("click", function () {
-  let all = document.querySelector(".todoDetails");
-  all.innerHTML = "";
-  let isChecked = allTodo.filter(
-    (item) => item.querySelector("input").checked === true
-  );
-  isChecked.forEach((item) => {
-    all.append(item);
-  });
-  noOfItems.innerText = `${isChecked.length} items left`;
-});
-
-let activeData = document.querySelector(".active");
-activeData.addEventListener("click", function () {
-  let all = document.querySelector(".todoDetails");
-  all.innerHTML = "";
-  let isActive = allTodo.filter(
-    (item) => item.querySelector("input").checked === false
-  );
-  isActive.forEach((item) => {
-    all.appendChild(item);
-  });
-  noOfItems.innerText = `${isActive.length} items left`;
-});
-
-let clearCompleted = document.querySelector(".clear_completed");
-clearCompleted.addEventListener("click", function () {
-  let all = document.querySelector(".todoDetails");
-  all.innerHTML = "";
-  let isActive = allTodo.filter(
-    (item) => item.querySelector("input").checked === false
-  );
-  isActive.forEach((item) => {
-    all.appendChild(item);
-  });
-  noOfItems.innerText = `${isActive.length} items left`;
+  if (className === "all") {
+    let all = document.querySelector(".todoDetails");
+    all.innerHTML = "";
+    allTodo.forEach((item) => {
+      all.appendChild(item);
+    });
+    noOfItems.innerText = `${allTodo.length} items left`;
+  } else if (className === "active") {
+    let all = document.querySelector(".todoDetails");
+    all.innerHTML = "";
+    let isActive = allTodo.filter(
+      (item) => item.querySelector("input").checked === false
+    );
+    isActive.forEach((item) => {
+      all.appendChild(item);
+    });
+    noOfItems.innerText = `${isActive.length} items left`;
+  } else if (className === "completed") {
+    let all = document.querySelector(".todoDetails");
+    all.innerHTML = "";
+    let isChecked = allTodo.filter(
+      (item) => item.querySelector("input").checked === true
+    );
+    isChecked.forEach((item) => {
+      all.append(item);
+    });
+    noOfItems.innerText = `${isChecked.length} items left`;
+  } else if (className === "clear_completed") {
+    let all = document.querySelector(".todoDetails");
+    all.innerHTML = "";
+    let isActive = allTodo.filter(
+      (item) => item.querySelector("input").checked === false
+    );
+    allTodo = isActive;
+    allTodo.forEach((item) => {
+      all.appendChild(item);
+    });
+    noOfItems.innerText = `${isActive.length} items left`;
+  }
 });
 
 function deleteTodo(target) {
   let all = document.querySelector(".todoDetails");
   all.innerHTML = "";
-  console.log(allTodo[0].querySelector("img").id);
   let deletedTodo = allTodo.filter(
     (item) => item.querySelector("img").id !== target.id
   );
-  allTodo.length = deletedTodo.length;
-  for (let index = 0; index < allTodo.length; index++) {
-    allTodo[index] = deletedTodo[index];
-  }
+  allTodo = deletedTodo;
   allTodo.forEach((item) => {
     all.appendChild(item);
   });
