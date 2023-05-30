@@ -1,7 +1,6 @@
 const createToDo = document.querySelector("#newTodo");
 let allTodo = [];
-const activeTodo = [];
-const completedTodo = [];
+
 let count = 0;
 const noOfItems = document.querySelector(".footer");
 createToDo.addEventListener("keypress", function (event) {
@@ -40,7 +39,6 @@ createToDo.addEventListener("keypress", function (event) {
     allList.append(row_wise);
 
     noOfItems.innerText = `${allTodo.length} items left`;
-    console.log(noOfItems.innerText);
   }
 });
 
@@ -99,7 +97,11 @@ function deleteTodo(target) {
   let deletedTodo = allTodo.filter(
     (item) => item.querySelector("img").id !== target.id
   );
-  deletedTodo.forEach((item) => {
+  allTodo.length = deletedTodo.length;
+  for (let index = 0; index < allTodo.length; index++) {
+    allTodo[index] = deletedTodo[index];
+  }
+  allTodo.forEach((item) => {
     all.appendChild(item);
   });
   noOfItems.innerText = `${deletedTodo.length} items left`;
