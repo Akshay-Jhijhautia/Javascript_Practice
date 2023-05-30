@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="todo">
+        <h1>T O D O</h1>
+        <input
+          class="todoData"
+          type="text"
+          name="todolist"
+          placeholder="Create a new todo..."
+          id="newTodo"
+        />
+        <label for="newTodo"></label>
+        <div class="todoDetails">
+          <div class="data"></div>
+        </div>
+        <span>
+          <span class="footer">0 items left</span>
+          <button class="all">All</button>
+          <button class="active">Active</button>
+          <button class="completed">Completed</button>
+          <button class="clear_completed">Clear Completed</button>
+        </span>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

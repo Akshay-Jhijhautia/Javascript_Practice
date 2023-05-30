@@ -3,7 +3,7 @@ window.addEventListener(
   function () {
     console.log("Window");
   },
-  //true
+  // true
   false
 );
 
@@ -12,7 +12,7 @@ document.addEventListener(
   function () {
     console.log("Document");
   },
-  //true
+  // true
   false
 );
 
@@ -22,9 +22,8 @@ document.querySelector(".div2").addEventListener(
     //event.stopPropagation();
     console.log("Div 2");
   },
-  //true
-  //false
-  { once: true }
+  // true
+  false
 );
 
 document.querySelector(".div1").addEventListener(
@@ -32,7 +31,7 @@ document.querySelector(".div1").addEventListener(
   function () {
     console.log("Div 1");
   },
-  //true
+  // true
   false
 );
 
@@ -42,6 +41,6 @@ document.querySelector("button").addEventListener(
     //console.log(event);
     console.log((event.target.innerText = "button clicked"));
   },
-  //true
+  // true
   false
 );
